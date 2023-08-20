@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aqua;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-width: 2px;
+    border-color: aqua;
+    border-radius: 5px;
+    color: aqua;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: rgb(42, 48, 46);
+}
+
+.start-btn, .next-btn, .submit-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
